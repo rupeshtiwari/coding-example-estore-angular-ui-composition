@@ -1,12 +1,14 @@
 # e-Store UI Composition sample App using Angular and NgRX
 
-- e-Store is a prototype client side application which solves UI-Composition problem for microservices. And proposes potential micro-frontend architecture.
-- Online shoping application has below use cases implementations in this project:
-  - ✔️ Listing Items for online sales
-  - ✔️ Adding Item to Cart
-  - ✔️ View Cart
-  - ✔️ Checkout
-  - ✔️ Submit Order
+**e-Store** is a client side prototype application to solves **UI-Composition** problem for micro services architecture. This application proposes potential micro-frontend architecture for UI framework using Angular and NgRX.
+
+**e-store** shoping application has below use cases implementations in this project:
+
+- ✔️ Listing Items for online sales
+- ✔️ Adding Item to Cart
+- ✔️ View Cart
+- ✔️ Checkout
+- ✔️ Submit Order
 
 ## Code Architecture
 

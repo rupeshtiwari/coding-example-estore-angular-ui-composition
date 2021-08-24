@@ -802,7 +802,8 @@ var ProductImageContainerComponent = /** @class */ (function () {
         this.store = store;
     }
     ProductImageContainerComponent.prototype.ngOnInit = function () {
-        this.imageLink$ = this.store.select(__WEBPACK_IMPORTED_MODULE_3__reducers__["e" /* getProductImageLinkById */](this.productId))
+        this.imageLink$ = this.store
+            .select(__WEBPACK_IMPORTED_MODULE_3__reducers__["e" /* getProductImageLinkById */](this.productId))
             .map(function (s) { return "" + __WEBPACK_IMPORTED_MODULE_0__src_environments_environment__["a" /* environment */].BASE_URL + s; });
     };
     __decorate([
@@ -811,9 +812,9 @@ var ProductImageContainerComponent = /** @class */ (function () {
     ], ProductImageContainerComponent.prototype, "productId", void 0);
     ProductImageContainerComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Component */])({
-            selector: 'es-product-image',
-            template: "\n    <img [src]=\"imageLink$|async\" style=\"width:55px;height:60px\" />\n    ",
-            changeDetection: __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* ChangeDetectionStrategy */].OnPush
+            selector: "es-product-image",
+            template: "\n    <img [src]=\"imageLink$ | async\" style=\"width:20%;height:auto\" />\n  ",
+            changeDetection: __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* ChangeDetectionStrategy */].OnPush,
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["h" /* Store */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["h" /* Store */]) === "function" && _a || Object])
     ], ProductImageContainerComponent);
@@ -1987,7 +1988,7 @@ var NotFoundPageComponent = /** @class */ (function () {
 /***/ "../../../../../src/app/branding/containers/order-submit-page.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card>\r\n    <button mat-button mat-raised-button color=\"primary\">Place your order</button>\r\n\r\n    <div id=\"pricing-div\">\r\n        <h2>Order Summary</h2>\r\n        <pre>\r\n        Items (2):\t$179.98\r\n        Shipping & handling:\t$0.00\r\n        Total before tax:\t$179.98\r\n        Estimated tax to be collected:\t$12.38\r\n        Order total:\t$192.36\r\n        </pre>\r\n    </div>\r\n</mat-card>"
+module.exports = "<mat-card>\r\n    <button mat-button mat-raised-button color=\"primary\" (click)=\"placeOrder()\">Place your order</button>\r\n\r\n    <div id=\"pricing-div\">\r\n        <h2>Order Summary</h2>\r\n        <pre>\r\n        Items (2):\t$179.98\r\n        Shipping & handling:\t$0.00\r\n        Total before tax:\t$179.98\r\n        Estimated tax to be collected:\t$12.38\r\n        Order total:\t$192.36\r\n        </pre>\r\n    </div>\r\n</mat-card>\r\n"
 
 /***/ }),
 
@@ -1997,24 +1998,36 @@ module.exports = "<mat-card>\r\n    <button mat-button mat-raised-button color=\
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrderSubmitContainerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var OrderSubmitContainerComponent = /** @class */ (function () {
-    function OrderSubmitContainerComponent() {
+    function OrderSubmitContainerComponent(router) {
+        this.router = router;
     }
+    OrderSubmitContainerComponent.prototype.placeOrder = function () {
+        alert("Thanks for shopping with us, please continue shopping");
+        this.router.navigate(["/"]);
+    };
     OrderSubmitContainerComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-            selector: 'es-order-submit-page',
+            selector: "es-order-submit-page",
             template: __webpack_require__("../../../../../src/app/branding/containers/order-submit-page.html"),
-            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectionStrategy */].OnPush
-        })
+            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectionStrategy */].OnPush,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === "function" && _a || Object])
     ], OrderSubmitContainerComponent);
     return OrderSubmitContainerComponent;
+    var _a;
 }());
 
 //# sourceMappingURL=order-submit-page.js.map
