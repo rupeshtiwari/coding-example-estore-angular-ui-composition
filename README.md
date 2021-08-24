@@ -4,7 +4,7 @@
 
 **e-store** shoping application has below use cases implementations in this project:
 
-- Display Menu
+- ✔️ Display Menu
 
 ![](https://i.imgur.com/xsuEBZR.png)
 
