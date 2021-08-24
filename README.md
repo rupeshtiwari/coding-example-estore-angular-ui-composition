@@ -65,9 +65,9 @@ There are 3 modules from below business services:
 There is `Branding Service` Modules which takes all of the above 3 modules code and create Composed UI pages.
 `ItOps Service` module is also there which is not used yet.
 
-## UI COmposition
+## UI Composition
 
-See the app live in action [here](http://www.rupeshtiwari.com/coding-example-estore-angular-ui-composition/)
+See the [e-store app live here](http://www.rupeshtiwari.com/coding-example-estore-angular-ui-composition/)
 
 The **Products** page is a composed UI. It has components from `sales`, `finance` and `branding` services.
 
