@@ -2,19 +2,19 @@
 
 - e-Store is a prototype client side application which solves UI-Composition problem for microservices. And proposes potential micro-frontend architecture.
 - Online shoping application has below use cases implementations in this project:
-  - Listing Items for online sales
-  - Adding Item to Cart
-  - View Cart
-  - Checkout
-  - Submit Order
+  - ✔️ Listing Items for online sales
+  - ✔️ Adding Item to Cart
+  - ✔️ View Cart
+  - ✔️ Checkout
+  - ✔️ Submit Order
 
 ## Code Architecture
 
 There are 3 modules from below business services:
 
-- Sales
-- Finance and
-- Customers
+- ✔️ Sales
+- ✔️ Finance and
+- ✔️ Customers
 
 There is Branding Modules which takes all of the above 3 modules code and create Composed UI pages.
 `ItOps` module is also there which is not used yet.
@@ -31,8 +31,8 @@ This project is following SOA principle and trying to solve **client Side UI Com
 
 ## Technology Used
 
-- NgRx
-- Angular
+- ✔️ NgRx
+- ✔️ Angular
 
 ## Getting started
 
