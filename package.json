@@ -15,7 +15,7 @@
     "g:add": "git add dist",
     "g:push": "git subtree push --prefix dist origin gh-pages",
     "g:publish": "npm run build:prod && npm run g:add && npm run g:push",
-    "build:ngpage":"ng build --prod --base-href /coding-example-angular-ngrx-counter-app/"
+    "build:ngpage":"ng build --base-href /coding-example-estore-angular-ui-composition/"
   },
   "private": true,
   "dependencies": {

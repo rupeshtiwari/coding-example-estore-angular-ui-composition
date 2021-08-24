@@ -1,3 +1,10 @@
 {
-    "workbench.colorTheme": "Solarized Dark"
+    "workbench.colorTheme": "Solarized Dark",
+    "spellchecker.ignoreWordsList": [
+        "online",
+        "shoping",
+        "Online",
+        "Redux",
+        "intrested"
+    ]
 }
