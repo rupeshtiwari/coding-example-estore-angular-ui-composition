@@ -1493,20 +1493,20 @@ var SalesApi = /** @class */ (function () {
         this.order = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__["a" /* Subject */]();
         this.products = [
             __WEBPACK_IMPORTED_MODULE_3__models_product__["a" /* Product */].create({
-                id: '1',
-                name: 'Ice Creame',
-                imageLink: '\\assets\\images\\icecream.jpg'
+                id: "1",
+                name: "Ice Creame",
+                imageLink: "https://i.imgur.com/Stfcjsh.png",
             }),
             __WEBPACK_IMPORTED_MODULE_3__models_product__["a" /* Product */].create({
-                id: '2',
-                name: 'Parle G',
-                imageLink: '\\assets\\images\\parleg.jpg'
+                id: "2",
+                name: "Parle G",
+                imageLink: "https://i.imgur.com/0hVl9sS.png",
             }),
             __WEBPACK_IMPORTED_MODULE_3__models_product__["a" /* Product */].create({
-                id: '3',
-                name: 'iPhone',
-                imageLink: '\\assets\\images\\iphone.jpg'
-            })
+                id: "3",
+                name: "iPhone",
+                imageLink: "https://i.imgur.com/qwjsQc6.png",
+            }),
         ];
     }
     SalesApi.prototype.getAllProducts = function () {
