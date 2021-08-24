@@ -9,38 +9,38 @@ import { Product } from './models/product';
 
 @Injectable()
 export class SalesApi {
-    cartItem = new Subject<CartItem>();
-    order = new Subject<Order>();
+  cartItem = new Subject<CartItem>();
+  order = new Subject<Order>();
 
-    products = [
-        Product.create({
-            id: '1',
-            name: 'Ice Creame',
-            imageLink: '\\assets\\images\\icecream.jpg'
-        }),
-        Product.create({
-            id: '2',
-            name: 'Parle G',
-            imageLink: '\\assets\\images\\parleg.jpg'
-        }),
-        Product.create({
-            id: '3',
-            name: 'iPhone',
-            imageLink: '\\assets\\images\\iphone.jpg'
-        })
-    ];
+  products = [
+    Product.create({
+      id: "1",
+      name: "Ice Creame",
+      imageLink: "https://i.imgur.com/Stfcjsh.png",
+    }),
+    Product.create({
+      id: "2",
+      name: "Parle G",
+      imageLink: "https://i.imgur.com/0hVl9sS.png",
+    }),
+    Product.create({
+      id: "3",
+      name: "iPhone",
+      imageLink: "https://i.imgur.com/qwjsQc6.png",
+    }),
+  ];
 
-    getAllProducts() {
-        return of(this.products);
-    }
+  getAllProducts() {
+    return of(this.products);
+  }
 
-    createOrder(order: Order): Observable<Order> {
-        setTimeout(() => this.order.next(order), 500);
-        return this.order;
-    }
+  createOrder(order: Order): Observable<Order> {
+    setTimeout(() => this.order.next(order), 500);
+    return this.order;
+  }
 
-    addToCart(cartItem: CartItem): Observable<CartItem> {
-        setTimeout(() => this.cartItem.next(cartItem), 500);
-        return this.cartItem;
-    }
+  addToCart(cartItem: CartItem): Observable<CartItem> {
+    setTimeout(() => this.cartItem.next(cartItem), 500);
+    return this.cartItem;
+  }
 }
