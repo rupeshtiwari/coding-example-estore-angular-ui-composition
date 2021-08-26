@@ -2,6 +2,8 @@
 
 **e-Store** is a client side prototype application to solves **UI-Composition** problem for micro services architecture. This application proposes potential micro-frontend architecture for UI framework using Angular and NgRx. Visit the [e-store application live here](http://www.rupeshtiwari.com/coding-example-estore-angular-ui-composition/)
 
+![](demo/demo.gif)
+
 **e-store** shoping application has below use cases implementations in this project:
 
 - ✔️ Display Menu
